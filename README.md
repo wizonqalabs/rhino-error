@@ -38,7 +38,7 @@ try {
   . . some code . .
 }
 catch (FileNotFoundException e) {
-  fail (CoteafsError.class, "Test Error!", Reason.R2, Category.C1, Severity.CRITICAL);
+  fail (RhinoError.class, "Test Error!", Reason.R2, Category.C1, Severity.CRITICAL);
 }
 
 . . .
@@ -58,7 +58,7 @@ try {
   . . some code . .
 }
 catch (FileNotFoundException e) {
-  fail (CoteafsError.class, "Test Error!", e, Reason.R2, Category.C1, Severity.CRITICAL);
+  fail (RhinoError.class, "Test Error!", e, Reason.R2, Category.C1, Severity.CRITICAL);
 }
 
 . . .
@@ -74,7 +74,7 @@ try {
   [code block]
 } catch (final Exception e) {
   // Filter exception to show only exception occurred in only the given package.
-  handleError("com.github.wasiqb", e).forEach(System.err::println);
+  handleError("com.github.wizonqalabs", e).forEach(System.err::println);
 
 // OR
 
@@ -86,16 +86,16 @@ try {
 Will output formatted exception with filtered stacktrace by package name like this,
 
 ```shell script
-Error occurred: (com.github.wizonqalabs.rhino.error.CoteafsError)
+Error occurred: (com.github.wizonqalabs.rhino.error.RhinoError)
 Message: Test Error!
   at com.github.wizonqalabs.rhino.error.util.ErrorUtil: fail (147)
   at com.github.wizonqalabs.rhino.error.util.ErrorUtil: fail (95)
-  at com.github.wizonqalabs.rhino.error.util.ErrorUtilTest: testCoteafsErrorWithFiveArg (48)
+  at com.github.wizonqalabs.rhino.error.util.ErrorUtilTest: testRhinoErrorWithFiveArg (48)
 Caused by: (class java.io.FileNotFoundException)
 Message: null
   at com.github.wizonqalabs.rhino.error.util.ErrorUtil: fail (147)
   at com.github.wizonqalabs.rhino.error.util.ErrorUtil: fail (95)
-  at com.github.wizonqalabs.rhino.error.util.ErrorUtilTest: testCoteafsErrorWithFiveArg (48)
+  at com.github.wizonqalabs.rhino.error.util.ErrorUtilTest: testRhinoErrorWithFiveArg (48)
 ```
 
 ## Usage
