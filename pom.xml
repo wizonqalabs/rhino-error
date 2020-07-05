@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>rhino-error</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <description>Custom Rhino Error for Automation frameworks.</description>
+    <url>https://github.com/wizonqalabs/rhino-error</url>
+
+    <parent>
+        <groupId>com.github.wizonqalabs.rhino</groupId>
+        <artifactId>rhino-pom</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/wizonqalabs/rhino-error/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git@github.com:wizonqalabs/rhino-error.git</connection>
+        <developerConnection>scm:git:git@github.com:wizonqalabs/rhino-error.git</developerConnection>
+        <url>https://github.com/wizonqalabs/rhino-error</url>
+    </scm>
+
+    <ciManagement>
+        <system>CircleCI</system>
+        <url>https://circleci.com/gh/wizonqalabs/rhino-error</url>
+    </ciManagement>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.truth/truth -->
+        <dependency>
+            <groupId>com.google.truth</groupId>
+            <artifactId>truth</artifactId>
+            <version>1.0.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

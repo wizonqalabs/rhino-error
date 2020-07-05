@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rhino Error Suite">
+    <test name="Rhino Error Test">
+        <classes>
+            <class name="com.github.wizonqalabs.rhino.error.ErrorUtilTest"/>
+        </classes>
+    </test> <!-- Rhino Config Test -->
+</suite> <!-- Rhino Config Suite -->
